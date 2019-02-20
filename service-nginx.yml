@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-first-app-in-kubernetes
+spec:
+  selector:
+   app:nginx
+  ports:
+  - protocol:TCP
+    port: 8080
+    targetport:80
